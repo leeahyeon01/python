@@ -21,11 +21,3 @@ for i in rows:
     print(i)
 
 conn.commit()
-
-
-# def search_data(conn):
-#     cur = conn.cursor()
-#     sql = 'SELECT * FROM users'
-#     cur.execute(sql)
-#     results = cur.fetchall()
-#     print(results)
