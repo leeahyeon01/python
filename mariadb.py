@@ -12,7 +12,7 @@ conn = pymysql.connect(host='127.0.0.1', user='root', password='1234', db='aitra
 # 쉽게 말해 쿼리 결과를 가져오면서 여러 컬럼 중에서 특정 컬럼의 위치정보도 포함하고 있는 셈이다.
 cur = conn.cursor()
 
-sql = "select market,name from companylist "
+sql = "select * from companylist "
 cur.execute(sql)
 rows = cur.fetchall()
 
